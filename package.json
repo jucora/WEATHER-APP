@@ -1,0 +1,25 @@
+{
+  "name": "WEATHER-APP",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jucora/WEATHER-APP.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jucora/WEATHER-APP/issues"
+  },
+  "homepage": "https://github.com/jucora/WEATHER-APP#readme",
+  "devDependencies": {
+    "eslint": "^7.1.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-plugin-import": "^2.20.2"
+  }
+}
