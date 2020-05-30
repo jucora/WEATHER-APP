@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: black;
+}
+.container {
+  background: url(../images/background.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 1000px;
+  margin: auto;
+  padding: 100px;
+  width: 80%;
+}
+.weatherBox {
+  background: red;
+  height: 500px;
+  margin: auto;
+  padding: 20px;
+  width: 80%;
+  z-index: 10;
+}
+.title {
+  color: white;
+  text-align: center;
+}
+
+/* INPUT */
+.inputContainer {
+  border: 1px solid white;
+  border-radius: 50px;
+  margin: auto;
+  margin-top: 10px;
+  padding: 50px;
+  width: 80%;
+}
+.inputContainer label {
+  color: white;
+  margin-right: 10px;
+}
+.inputContainer input {
+  padding: 5px;
+  width: 100%;
+}
+
+.inputContainer .buttonContainer {
+  text-align: center;
+}
+.inputContainer .buttonContainer button {
+  margin-top: 10px;
+  padding: 10px;
+  width: 20%;
+}
