@@ -1,10 +1,13 @@
 import info from "./weatherInfo";
 
-const setInfo = (humidity, pressure) => {
+const setInfo = (city, weatherDescription, humidity, pressure, temperature) => {
   const infoBox = document.querySelector(".infoBox");
   infoBox.style.display = "block";
+  info.city.textContent = city;
+  info.weatherDescription.textContent = weatherDescription;
   info.humidityInfo.textContent = humidity;
   info.pressureInfo.textContent = pressure;
+  info.temperatureInfo.textContent = temperature;
 };
 
 async function get(city) {
@@ -15,8 +18,15 @@ async function get(city) {
     { mode: "cors" }
   );
   const res = await response.json();
+  console.log(res);
   if (res) {
-    setInfo(res.main.humidity, res.main.pressure);
+    setInfo(
+      res.name,
+      res.weather[0].description,
+      res.main.humidity,
+      res.main.pressure,
+      res.main.temp
+    );
   }
 }
 

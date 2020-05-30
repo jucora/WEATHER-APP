@@ -106,7 +106,7 @@ body {
 }
 
 .container {
-  margin: 10% auto;
+  margin: 5% auto;
   left: 0;
   right: 0;
   position: absolute;
@@ -155,13 +155,39 @@ form .buttonContainer button {
   background: blue;
   border: 1px solid white;
   border-radius: 50px;
+  box-sizing: border-box;
   display: none;
-  height: 40px;
+  height: auto;
   margin: auto;
   margin-top: 20px;
   opacity: 0.5;
   padding: 50px;
   width: 80%;
+}
+
+.weatherContainer {
+  background: gray;
+  height: auto;
+  margin-top: 10px;
+  padding: 30px;
+}
+
+.weatherDetail {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.weatherDetail li {
+  margin-right: 10px;
+  color: white;
+  font-size: 24px;
+  float: left;
+}
+
+.infoBox h1 {
+  color: white;
+  text-align: center;
 }
 
 .infoBox h2 {
