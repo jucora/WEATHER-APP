@@ -1,9 +1,20 @@
 import info from "./weatherInfo";
 
-const setInfo = (city, weatherDescription, humidity, pressure, temperature) => {
+const setInfo = (
+  city,
+  icon,
+  weatherDescription,
+  humidity,
+  pressure,
+  temperature
+) => {
   const infoBox = document.querySelector(".infoBox");
   infoBox.style.display = "block";
   info.city.textContent = city;
+  info.image.setAttribute(
+    "src",
+    "http://openweathermap.org/img/w/" + icon + ".png"
+  );
   info.weatherDescription.textContent = weatherDescription;
   info.humidityInfo.textContent = humidity;
   info.pressureInfo.textContent = pressure;
@@ -22,6 +33,7 @@ async function get(city) {
   if (res) {
     setInfo(
       res.name,
+      res.weather[0].icon,
       res.weather[0].description,
       res.main.humidity,
       res.main.pressure,

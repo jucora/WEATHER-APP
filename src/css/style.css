@@ -1,6 +1,8 @@
 * {
+  list-style: none;
   margin: 0;
   padding: 0;
+  text-decoration: none;
 }
 body {
   background: black;
@@ -152,7 +154,6 @@ form .buttonContainer button {
 
 /*INFO BOARD*/
 .infoBox {
-  background: blue;
   border: 1px solid white;
   border-radius: 50px;
   box-sizing: border-box;
@@ -160,9 +161,22 @@ form .buttonContainer button {
   height: auto;
   margin: auto;
   margin-top: 20px;
-  opacity: 0.5;
   padding: 50px;
   width: 80%;
+}
+
+.infoBox h1 {
+  color: white;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.weatherImage {
+  display: block;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 150px;
 }
 
 .weatherContainer {
@@ -175,7 +189,6 @@ form .buttonContainer button {
 .weatherDetail {
   display: flex;
   justify-content: center;
-  list-style: none;
 }
 
 .weatherDetail li {
@@ -185,17 +198,71 @@ form .buttonContainer button {
   float: left;
 }
 
-.infoBox h1 {
-  color: white;
-  text-align: center;
+/*----SLIDE-----*/
+#slide {
+  position: relative;
+  margin: auto;
+  width: 1000px;
+  height: 301px;
+}
+#slide ul {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 1000px;
+  height: 301px;
+  /*background: url(../img/slide01.jpg);*/
+}
+#slide ul li .slideContent {
+  position: absolute;
+  opacity: 0;
+  left: 0;
+  transition: opacity 1s ease-out;
 }
 
-.infoBox h2 {
-  color: white;
-  text-align: center;
+#slide ul li label {
+  position: relative;
+  z-index: 3;
+  top: 304px;
+  left: 440px;
+  float: left;
+  width: 10px;
+  height: 10px;
+  margin: 0 2px;
+  background: blue;
+  border: 3px solid white;
+  cursor: pointer;
+  border-radius: 100%;
+}
+#slide ul li label:hover {
+  background: #aaa;
+}
+#slide ul li label:active {
+  background: magenta;
 }
 
-.infoBox p {
-  color: white;
-  text-align: center;
+#slide ul li input {
+  display: none;
+}
+#slide ul li input#boton-1:checked ~ #foto01 {
+  opacity: 1;
+}
+#slide ul li input#boton-2:checked ~ #foto02 {
+  opacity: 1;
+}
+#slide ul li input#boton-3:checked ~ #foto03 {
+  opacity: 1;
+}
+#slide ul li input#boton-4:checked ~ #foto04 {
+  opacity: 1;
+}
+#slide ul li input#boton-5:checked ~ #foto05 {
+  opacity: 1;
+}
+#botoneraSlide {
+  position: relative;
+  margin: auto;
+  width: 1000px;
+  height: 26px;
+  background: url(../images/backButtonsSlide.jpg);
 }
