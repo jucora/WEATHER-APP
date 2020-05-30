@@ -16,8 +16,8 @@ body {
   width: 80%;
 }
 .weatherBox {
-  background: red;
-  height: 500px;
+  background: olive;
+  height: auto;
   margin: auto;
   padding: 20px;
   width: 80%;
@@ -29,7 +29,7 @@ body {
 }
 
 /* INPUT */
-.inputContainer {
+form {
   border: 1px solid white;
   border-radius: 50px;
   margin: auto;
@@ -37,20 +37,43 @@ body {
   padding: 50px;
   width: 80%;
 }
-.inputContainer label {
+form label {
   color: white;
   margin-right: 10px;
 }
-.inputContainer input {
+form input {
   padding: 5px;
   width: 100%;
 }
 
-.inputContainer .buttonContainer {
+form .buttonContainer {
   text-align: center;
 }
-.inputContainer .buttonContainer button {
+form .buttonContainer button {
   margin-top: 10px;
   padding: 10px;
   width: 20%;
+}
+
+/*INFO BOARD*/
+.infoBox {
+  background: blue;
+  border: 1px solid white;
+  border-radius: 50px;
+  display: none;
+  height: 40px;
+  margin: auto;
+  margin-top: 20px;
+  padding: 50px;
+  width: 80%;
+}
+
+.infoBox h2 {
+  color: white;
+  text-align: center;
+}
+
+.infoBox p {
+  color: white;
+  text-align: center;
 }

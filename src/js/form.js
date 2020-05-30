@@ -1,6 +1,22 @@
+import get from "./location";
+
+const inputValidation = (input) => {
+  if (input.value === null || input.value === "") {
+    return false;
+  } else {
+    get(input.value);
+  }
+};
+
+const buttonListener = (button, input) => {
+  button.addEventListener("click", () => {
+    inputValidation(input);
+  });
+};
+
 const form = () => {
   const form = document.createElement("form");
-  form.classList.add("inputContainer");
+  form.setAttribute("action", "#");
   const label = document.createElement("label");
   label.setAttribute("for", "searchInput");
   label.textContent = "City";
@@ -15,6 +31,7 @@ const form = () => {
   button.setAttribute("type", "submit");
   button.textContent = "Search";
   buttonContainer.appendChild(button);
+  buttonListener(button, input);
   form.appendChild(label);
   form.appendChild(input);
   form.appendChild(buttonContainer);
