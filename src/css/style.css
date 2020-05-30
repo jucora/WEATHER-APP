@@ -5,23 +5,118 @@
 body {
   background: black;
 }
-.container {
-  background: url(../images/background.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 1000px;
-  margin: auto;
-  padding: 100px;
-  width: 80%;
+
+/*BODY COVER ANIMATION*/
+
+@keyframes myAnimation {
+  0% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
-.weatherBox {
-  background: olive;
-  height: auto;
-  margin: auto;
-  padding: 20px;
+@-webkit-keyframes myAnimation {
+  0% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes myAnimation {
+  0% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#cover1 {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background: url(../images/background1.jpg);
+  background-size: cover;
+  background-position: center;
+  animation: myAnimation 24s linear 18s infinite;
+  -webkit-animation: myAnimation 24s linear 18s infinite;
+  -moz-animation: myAnimation 24s linear 18s infinite;
+}
+#cover2 {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background: url(../images/background2.jpg);
+  background-size: cover;
+  background-position: center;
+  animation: myAnimation 24s linear 12s infinite;
+  -webkit-animation: myAnimation 24s linear 12s infinite;
+  -moz-animation: myAnimation 24s linear 12s infinite;
+}
+#cover3 {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background: url(../images/background3.jpg);
+  background-size: cover;
+  background-position: center;
+  animation: myAnimation 24s linear 6s infinite;
+  -webkit-animation: myAnimation 24s linear 6s infinite;
+  -moz-animation: myAnimation 24s linear 6s infinite;
+}
+#cover4 {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background: url(../images/background4.jpg);
+  background-size: cover;
+  background-position: center;
+  animation: myAnimation 24s linear 0s infinite;
+  -webkit-animation: myAnimation 24s linear 0s infinite;
+  -moz-animation: myAnimation 24s linear 0s infinite;
+}
+
+.container {
+  margin: 10% auto;
+  left: 0;
+  right: 0;
+  position: absolute;
+  top: 50px;
   width: 80%;
   z-index: 10;
+}
+.weatherBox {
+  height: auto;
+  padding: 20px;
 }
 .title {
   color: white;
@@ -64,6 +159,7 @@ form .buttonContainer button {
   height: 40px;
   margin: auto;
   margin-top: 20px;
+  opacity: 0.5;
   padding: 50px;
   width: 80%;
 }

@@ -93,7 +93,7 @@
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("// Imports\nvar ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\nvar ___CSS_LOADER_GET_URL_IMPORT___ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/getUrl.js */ \"./node_modules/css-loader/dist/runtime/getUrl.js\");\nvar ___CSS_LOADER_URL_IMPORT_0___ = __webpack_require__(/*! ../images/background.jpg */ \"./src/images/background.jpg\");\nexports = ___CSS_LOADER_API_IMPORT___(false);\nvar ___CSS_LOADER_URL_REPLACEMENT_0___ = ___CSS_LOADER_GET_URL_IMPORT___(___CSS_LOADER_URL_IMPORT_0___);\n// Module\nexports.push([module.i, \"* {\\r\\n  margin: 0;\\r\\n  padding: 0;\\r\\n}\\r\\nbody {\\r\\n  background: black;\\r\\n}\\r\\n.container {\\r\\n  background: url(\" + ___CSS_LOADER_URL_REPLACEMENT_0___ + \");\\r\\n  background-position: center;\\r\\n  background-repeat: no-repeat;\\r\\n  background-size: cover;\\r\\n  height: 1000px;\\r\\n  margin: auto;\\r\\n  padding: 100px;\\r\\n  width: 80%;\\r\\n}\\r\\n.weatherBox {\\r\\n  background: olive;\\r\\n  height: auto;\\r\\n  margin: auto;\\r\\n  padding: 20px;\\r\\n  width: 80%;\\r\\n  z-index: 10;\\r\\n}\\r\\n.title {\\r\\n  color: white;\\r\\n  text-align: center;\\r\\n}\\r\\n\\r\\n/* INPUT */\\r\\nform {\\r\\n  border: 1px solid white;\\r\\n  border-radius: 50px;\\r\\n  margin: auto;\\r\\n  margin-top: 10px;\\r\\n  padding: 50px;\\r\\n  width: 80%;\\r\\n}\\r\\nform label {\\r\\n  color: white;\\r\\n  margin-right: 10px;\\r\\n}\\r\\nform input {\\r\\n  padding: 5px;\\r\\n  width: 100%;\\r\\n}\\r\\n\\r\\nform .buttonContainer {\\r\\n  text-align: center;\\r\\n}\\r\\nform .buttonContainer button {\\r\\n  margin-top: 10px;\\r\\n  padding: 10px;\\r\\n  width: 20%;\\r\\n}\\r\\n\\r\\n/*INFO BOARD*/\\r\\n.infoBox {\\r\\n  background: blue;\\r\\n  border: 1px solid white;\\r\\n  border-radius: 50px;\\r\\n  display: none;\\r\\n  height: 40px;\\r\\n  margin: auto;\\r\\n  margin-top: 20px;\\r\\n  padding: 50px;\\r\\n  width: 80%;\\r\\n}\\r\\n\\r\\n.infoBox h2 {\\r\\n  color: white;\\r\\n  text-align: center;\\r\\n}\\r\\n\\r\\n.infoBox p {\\r\\n  color: white;\\r\\n  text-align: center;\\r\\n}\\r\\n\", \"\"]);\n// Exports\nmodule.exports = exports;\n\n\n//# sourceURL=webpack:///./src/css/style.css?./node_modules/css-loader/dist/cjs.js");
+eval("// Imports\nvar ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\nvar ___CSS_LOADER_GET_URL_IMPORT___ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/getUrl.js */ \"./node_modules/css-loader/dist/runtime/getUrl.js\");\nvar ___CSS_LOADER_URL_IMPORT_0___ = __webpack_require__(/*! ../images/background1.jpg */ \"./src/images/background1.jpg\");\nvar ___CSS_LOADER_URL_IMPORT_1___ = __webpack_require__(/*! ../images/background2.jpg */ \"./src/images/background2.jpg\");\nvar ___CSS_LOADER_URL_IMPORT_2___ = __webpack_require__(/*! ../images/background3.jpg */ \"./src/images/background3.jpg\");\nvar ___CSS_LOADER_URL_IMPORT_3___ = __webpack_require__(/*! ../images/background4.jpg */ \"./src/images/background4.jpg\");\nexports = ___CSS_LOADER_API_IMPORT___(false);\nvar ___CSS_LOADER_URL_REPLACEMENT_0___ = ___CSS_LOADER_GET_URL_IMPORT___(___CSS_LOADER_URL_IMPORT_0___);\nvar ___CSS_LOADER_URL_REPLACEMENT_1___ = ___CSS_LOADER_GET_URL_IMPORT___(___CSS_LOADER_URL_IMPORT_1___);\nvar ___CSS_LOADER_URL_REPLACEMENT_2___ = ___CSS_LOADER_GET_URL_IMPORT___(___CSS_LOADER_URL_IMPORT_2___);\nvar ___CSS_LOADER_URL_REPLACEMENT_3___ = ___CSS_LOADER_GET_URL_IMPORT___(___CSS_LOADER_URL_IMPORT_3___);\n// Module\nexports.push([module.i, \"* {\\r\\n  margin: 0;\\r\\n  padding: 0;\\r\\n}\\r\\nbody {\\r\\n  background: black;\\r\\n}\\r\\n\\r\\n/*BODY COVER ANIMATION*/\\r\\n\\r\\n@keyframes myAnimation {\\r\\n  0% {\\r\\n    opacity: 1;\\r\\n  }\\r\\n  20% {\\r\\n    opacity: 1;\\r\\n  }\\r\\n  30% {\\r\\n    opacity: 0;\\r\\n  }\\r\\n  90% {\\r\\n    opacity: 0;\\r\\n  }\\r\\n  100% {\\r\\n    opacity: 1;\\r\\n  }\\r\\n}\\r\\n@-webkit-keyframes myAnimation {\\r\\n  0% {\\r\\n    opacity: 1;\\r\\n  }\\r\\n  20% {\\r\\n    opacity: 1;\\r\\n  }\\r\\n  30% {\\r\\n    opacity: 0;\\r\\n  }\\r\\n  90% {\\r\\n    opacity: 0;\\r\\n  }\\r\\n  100% {\\r\\n    opacity: 1;\\r\\n  }\\r\\n}\\r\\n@-moz-keyframes myAnimation {\\r\\n  0% {\\r\\n    opacity: 1;\\r\\n  }\\r\\n  20% {\\r\\n    opacity: 1;\\r\\n  }\\r\\n  30% {\\r\\n    opacity: 0;\\r\\n  }\\r\\n  90% {\\r\\n    opacity: 0;\\r\\n  }\\r\\n  100% {\\r\\n    opacity: 1;\\r\\n  }\\r\\n}\\r\\n\\r\\n#cover1 {\\r\\n  position: absolute;\\r\\n  width: 100%;\\r\\n  height: 100vh;\\r\\n  background: url(\" + ___CSS_LOADER_URL_REPLACEMENT_0___ + \");\\r\\n  background-size: cover;\\r\\n  background-position: center;\\r\\n  animation: myAnimation 24s linear 18s infinite;\\r\\n  -webkit-animation: myAnimation 24s linear 18s infinite;\\r\\n  -moz-animation: myAnimation 24s linear 18s infinite;\\r\\n}\\r\\n#cover2 {\\r\\n  position: absolute;\\r\\n  width: 100%;\\r\\n  height: 100vh;\\r\\n  background: url(\" + ___CSS_LOADER_URL_REPLACEMENT_1___ + \");\\r\\n  background-size: cover;\\r\\n  background-position: center;\\r\\n  animation: myAnimation 24s linear 12s infinite;\\r\\n  -webkit-animation: myAnimation 24s linear 12s infinite;\\r\\n  -moz-animation: myAnimation 24s linear 12s infinite;\\r\\n}\\r\\n#cover3 {\\r\\n  position: absolute;\\r\\n  width: 100%;\\r\\n  height: 100vh;\\r\\n  background: url(\" + ___CSS_LOADER_URL_REPLACEMENT_2___ + \");\\r\\n  background-size: cover;\\r\\n  background-position: center;\\r\\n  animation: myAnimation 24s linear 6s infinite;\\r\\n  -webkit-animation: myAnimation 24s linear 6s infinite;\\r\\n  -moz-animation: myAnimation 24s linear 6s infinite;\\r\\n}\\r\\n#cover4 {\\r\\n  position: absolute;\\r\\n  width: 100%;\\r\\n  height: 100vh;\\r\\n  background: url(\" + ___CSS_LOADER_URL_REPLACEMENT_3___ + \");\\r\\n  background-size: cover;\\r\\n  background-position: center;\\r\\n  animation: myAnimation 24s linear 0s infinite;\\r\\n  -webkit-animation: myAnimation 24s linear 0s infinite;\\r\\n  -moz-animation: myAnimation 24s linear 0s infinite;\\r\\n}\\r\\n\\r\\n.container {\\r\\n  margin: 10% auto;\\r\\n  left: 0;\\r\\n  right: 0;\\r\\n  position: absolute;\\r\\n  top: 50px;\\r\\n  width: 80%;\\r\\n  z-index: 10;\\r\\n}\\r\\n.weatherBox {\\r\\n  height: auto;\\r\\n  padding: 20px;\\r\\n}\\r\\n.title {\\r\\n  color: white;\\r\\n  text-align: center;\\r\\n}\\r\\n\\r\\n/* INPUT */\\r\\nform {\\r\\n  border: 1px solid white;\\r\\n  border-radius: 50px;\\r\\n  margin: auto;\\r\\n  margin-top: 10px;\\r\\n  padding: 50px;\\r\\n  width: 80%;\\r\\n}\\r\\nform label {\\r\\n  color: white;\\r\\n  margin-right: 10px;\\r\\n}\\r\\nform input {\\r\\n  padding: 5px;\\r\\n  width: 100%;\\r\\n}\\r\\n\\r\\nform .buttonContainer {\\r\\n  text-align: center;\\r\\n}\\r\\nform .buttonContainer button {\\r\\n  margin-top: 10px;\\r\\n  padding: 10px;\\r\\n  width: 20%;\\r\\n}\\r\\n\\r\\n/*INFO BOARD*/\\r\\n.infoBox {\\r\\n  background: blue;\\r\\n  border: 1px solid white;\\r\\n  border-radius: 50px;\\r\\n  display: none;\\r\\n  height: 40px;\\r\\n  margin: auto;\\r\\n  margin-top: 20px;\\r\\n  opacity: 0.5;\\r\\n  padding: 50px;\\r\\n  width: 80%;\\r\\n}\\r\\n\\r\\n.infoBox h2 {\\r\\n  color: white;\\r\\n  text-align: center;\\r\\n}\\r\\n\\r\\n.infoBox p {\\r\\n  color: white;\\r\\n  text-align: center;\\r\\n}\\r\\n\", \"\"]);\n// Exports\nmodule.exports = exports;\n\n\n//# sourceURL=webpack:///./src/css/style.css?./node_modules/css-loader/dist/cjs.js");
 
 /***/ }),
 
@@ -144,15 +144,51 @@ eval("var api = __webpack_require__(/*! ../../node_modules/style-loader/dist/run
 
 /***/ }),
 
-/***/ "./src/images/background.jpg":
-/*!***********************************!*\
-  !*** ./src/images/background.jpg ***!
-  \***********************************/
+/***/ "./src/images/background1.jpg":
+/*!************************************!*\
+  !*** ./src/images/background1.jpg ***!
+  \************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"68e98a430dd66a6d4d1ba0e898f9030c.jpg\");\n\n//# sourceURL=webpack:///./src/images/background.jpg?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"68e98a430dd66a6d4d1ba0e898f9030c.jpg\");\n\n//# sourceURL=webpack:///./src/images/background1.jpg?");
+
+/***/ }),
+
+/***/ "./src/images/background2.jpg":
+/*!************************************!*\
+  !*** ./src/images/background2.jpg ***!
+  \************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"c30ae258e1646546c98399bc5d2a7617.jpg\");\n\n//# sourceURL=webpack:///./src/images/background2.jpg?");
+
+/***/ }),
+
+/***/ "./src/images/background3.jpg":
+/*!************************************!*\
+  !*** ./src/images/background3.jpg ***!
+  \************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"fbfe3744f97d32e08696f3f2880fe8b2.jpg\");\n\n//# sourceURL=webpack:///./src/images/background3.jpg?");
+
+/***/ }),
+
+/***/ "./src/images/background4.jpg":
+/*!************************************!*\
+  !*** ./src/images/background4.jpg ***!
+  \************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"ff199596331ad09ae54cdb8ff8cbe7bb.jpg\");\n\n//# sourceURL=webpack:///./src/images/background4.jpg?");
 
 /***/ }),
 
@@ -164,7 +200,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ 
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _css_style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./css/style.css */ \"./src/css/style.css\");\n/* harmony import */ var _css_style_css__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_css_style_css__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _js_box__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./js/box */ \"./src/js/box.js\");\n/* harmony import */ var _js_form__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./js/form */ \"./src/js/form.js\");\n/* harmony import */ var _js_weatherInfo__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./js/weatherInfo */ \"./src/js/weatherInfo.js\");\n\r\n\r\n\r\n\r\n\r\nconst structure = () => {\r\n  const weatherContainer = Object(_js_box__WEBPACK_IMPORTED_MODULE_1__[\"default\"])();\r\n  weatherContainer.appendChild(Object(_js_form__WEBPACK_IMPORTED_MODULE_2__[\"default\"])());\r\n  const container = document.querySelector(\".container\");\r\n  container.appendChild(weatherContainer);\r\n  weatherContainer.appendChild(_js_weatherInfo__WEBPACK_IMPORTED_MODULE_3__[\"default\"].infoBox);\r\n};\r\n\r\ndocument.addEventListener(\"DOMContentLoaded\", structure());\r\n\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _css_style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./css/style.css */ \"./src/css/style.css\");\n/* harmony import */ var _css_style_css__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_css_style_css__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _js_box__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./js/box */ \"./src/js/box.js\");\n/* harmony import */ var _js_form__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./js/form */ \"./src/js/form.js\");\n/* harmony import */ var _js_weatherInfo__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./js/weatherInfo */ \"./src/js/weatherInfo.js\");\n\r\n\r\n\r\n\r\n\r\nconst structure = () => {\r\n  for (let i = 1; i <= 4; i++) {\r\n    const div = document.createElement(\"div\");\r\n    div.setAttribute(\"id\", \"cover\" + i);\r\n    div.classList.add(\"cover\");\r\n    document.querySelector(\"body\").appendChild(div);\r\n  }\r\n  const weatherContainer = Object(_js_box__WEBPACK_IMPORTED_MODULE_1__[\"default\"])();\r\n  weatherContainer.appendChild(Object(_js_form__WEBPACK_IMPORTED_MODULE_2__[\"default\"])());\r\n  const container = document.querySelector(\".container\");\r\n  container.appendChild(weatherContainer);\r\n  weatherContainer.appendChild(_js_weatherInfo__WEBPACK_IMPORTED_MODULE_3__[\"default\"].infoBox);\r\n};\r\n\r\ndocument.addEventListener(\"DOMContentLoaded\", structure());\r\n\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ }),
 
