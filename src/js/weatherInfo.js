@@ -1,35 +1,9 @@
-const createSlideButtons = () => {
-  const slideButtons = document.createElement("div");
-  slideButtons.setAttribute("id", "slideButtons");
-  return slideButtons;
-};
-
-const createSlide = (type) => {
-  const slide = document.createElement("slide");
-  slide.setAttribute("id", "slide");
-  const ul = document.createElement("ul");
-  slide.appendChild(ul);
-  const li = document.createElement("li");
-  ul.appendChild(li);
-  const input = document.createElement("input");
-  input.setAttribute("type", "radio");
-  input.setAttribute("id", "button-" + i, "radio");
-  input.setAttribute("name", "in");
-  li.appendChild(input);
-  const label = document.createElement("label");
-  label.setAttribute("for", "button-" + i);
-  li.appendChild(label);
-  const slideContent = document.createElement("div");
-  slideContent.classList.add("slideContent");
-  li.appendChild(slideContent);
-
-  return slide;
-};
-
 const info = (() => {
   const infoBox = document.createElement("div");
   infoBox.classList.add("infoBox");
   const city = document.createElement("h1");
+  const temperature = document.createElement("h2");
+  temperature.classList.add("class", "temperature");
   const line = document.createElement("hr");
   const image = document.createElement("img");
   image.classList.add("weatherImage");
@@ -57,24 +31,13 @@ const info = (() => {
   const pressureInfo = document.createElement("li");
   pressureDetail.appendChild(pressureTitle);
   pressureDetail.appendChild(pressureInfo);
-  const temperatureDetail = document.createElement("ul");
-  temperatureDetail.classList.add("weatherDetail");
-  const temperatureTitle = document.createElement("li");
-  temperatureTitle.textContent = "Temperature:";
-  const temperatureInfo = document.createElement("li");
-  temperatureDetail.appendChild(temperatureTitle);
-  temperatureDetail.appendChild(temperatureInfo);
+
   weatherContainer.appendChild(weatherDetail);
   weatherContainer.appendChild(humityDetail);
   weatherContainer.appendChild(pressureDetail);
-  weatherContainer.appendChild(temperatureDetail);
-  const slideWeather = createSlide("weather");
-  const slideMain = createSlide("main");
-  const slideButtons = createSlideButtons();
-  infoBox.appendChild(slideWeather);
-  infoBox.appendChild(slideMain);
-  infoBox.appendChild(slideButtons);
+
   infoBox.appendChild(city);
+  infoBox.appendChild(temperature);
   infoBox.appendChild(image);
   infoBox.appendChild(line);
   infoBox.appendChild(weatherContainer);
@@ -83,10 +46,10 @@ const info = (() => {
     weatherMain,
     weatherDescription,
     city,
+    temperature,
     image,
     humidityInfo,
     pressureInfo,
-    temperatureInfo,
   };
 })();
 

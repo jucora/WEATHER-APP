@@ -63,9 +63,10 @@ body {
 }
 
 #cover1 {
-  position: absolute;
+  position: fixed;
+  bottom: 0;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   background: url(../images/background1.jpg);
   background-size: cover;
   background-position: center;
@@ -74,9 +75,10 @@ body {
   -moz-animation: myAnimation 24s linear 18s infinite;
 }
 #cover2 {
-  position: absolute;
+  position: fixed;
+  bottom: 0;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   background: url(../images/background2.jpg);
   background-size: cover;
   background-position: center;
@@ -85,9 +87,10 @@ body {
   -moz-animation: myAnimation 24s linear 12s infinite;
 }
 #cover3 {
-  position: absolute;
+  position: fixed;
+  bottom: 0;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   background: url(../images/background3.jpg);
   background-size: cover;
   background-position: center;
@@ -96,9 +99,10 @@ body {
   -moz-animation: myAnimation 24s linear 6s infinite;
 }
 #cover4 {
-  position: absolute;
+  position: fixed;
+  bottom: 0;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   background: url(../images/background4.jpg);
   background-size: cover;
   background-position: center;
@@ -122,6 +126,7 @@ body {
 }
 .title {
   color: white;
+  font-size: 40px;
   text-align: center;
 }
 
@@ -136,10 +141,13 @@ form {
 }
 form label {
   color: white;
+  font-size: 20px;
   margin-right: 10px;
 }
 form input {
-  padding: 5px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  padding: 10px;
   width: 100%;
 }
 
@@ -147,13 +155,37 @@ form .buttonContainer {
   text-align: center;
 }
 form .buttonContainer button {
+  color: white;
+  background: black;
+  font-size: 18px;
   margin-top: 10px;
   padding: 10px;
-  width: 20%;
+  width: 15%;
+}
+form .buttonContainer button:hover {
+  border: 2px solid orange;
+  cursor: pointer;
 }
 
 /*INFO BOARD*/
+
+@keyframes boardAnimation {
+  0% {
+    bottom: -100px;
+  }
+
+  100% {
+    bottom: 2px;
+  }
+}
+
 .infoBox {
+  animation: boardAnimation 3s linear 0s;
+  -webkit-animation: boardAnimation 3s linear 0s;
+  -moz-animation: boardAnimation 3s linear 0s;
+
+  position: relative;
+
   border: 1px solid white;
   border-radius: 50px;
   box-sizing: border-box;
@@ -171,6 +203,12 @@ form .buttonContainer button {
   text-align: center;
 }
 
+.temperature {
+  color: white;
+  font-size: 50px;
+  text-align: center;
+}
+
 .weatherImage {
   display: block;
   margin-bottom: 30px;
@@ -180,7 +218,7 @@ form .buttonContainer button {
 }
 
 .weatherContainer {
-  background: gray;
+  background: #0f76a0;
   height: auto;
   margin-top: 10px;
   padding: 30px;
@@ -196,73 +234,4 @@ form .buttonContainer button {
   color: white;
   font-size: 24px;
   float: left;
-}
-
-/*----SLIDE-----*/
-#slide {
-  position: relative;
-  margin: auto;
-  width: 1000px;
-  height: 301px;
-}
-#slide ul {
-  position: relative;
-  top: 0;
-  left: 0;
-  width: 1000px;
-  height: 301px;
-  /*background: url(../img/slide01.jpg);*/
-}
-#slide ul li .slideContent {
-  position: absolute;
-  opacity: 0;
-  left: 0;
-  transition: opacity 1s ease-out;
-}
-
-#slide ul li label {
-  position: relative;
-  z-index: 3;
-  top: 304px;
-  left: 440px;
-  float: left;
-  width: 10px;
-  height: 10px;
-  margin: 0 2px;
-  background: blue;
-  border: 3px solid white;
-  cursor: pointer;
-  border-radius: 100%;
-}
-#slide ul li label:hover {
-  background: #aaa;
-}
-#slide ul li label:active {
-  background: magenta;
-}
-
-#slide ul li input {
-  display: none;
-}
-#slide ul li input#boton-1:checked ~ #foto01 {
-  opacity: 1;
-}
-#slide ul li input#boton-2:checked ~ #foto02 {
-  opacity: 1;
-}
-#slide ul li input#boton-3:checked ~ #foto03 {
-  opacity: 1;
-}
-#slide ul li input#boton-4:checked ~ #foto04 {
-  opacity: 1;
-}
-#slide ul li input#boton-5:checked ~ #foto05 {
-  opacity: 1;
-}
-#botoneraSlide {
-  position: relative;
-  margin: auto;
-  width: 1000px;
-  height: 26px;
-  background: url(../images/backButtonsSlide.jpg);
 }

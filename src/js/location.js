@@ -15,10 +15,11 @@ const setInfo = (
     "src",
     "http://openweathermap.org/img/w/" + icon + ".png"
   );
+  info.temperature.textContent = Math.trunc(temperature - 273.15);
+  info.temperature.innerHTML += " <sup>°C</sup>";
   info.weatherDescription.textContent = weatherDescription;
   info.humidityInfo.textContent = humidity;
   info.pressureInfo.textContent = pressure;
-  info.temperatureInfo.textContent = temperature;
 };
 
 async function get(city) {
