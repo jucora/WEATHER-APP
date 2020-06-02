@@ -1,10 +1,26 @@
 const info = (() => {
   const infoBox = document.createElement('div');
   infoBox.classList.add('infoBox');
+  // SWITCH TEMP CONVERTER
+  const switchBox = document.createElement('div');
+  switchBox.classList.add('switchBox');
+  switchBox.innerHTML += '<p>Celsius</p>';
+  const switchInput = document.createElement('input');
+  switchInput.setAttribute('type', 'checkbox');
+  switchInput.setAttribute('id', 'switchInput');
+  const switchLabel = document.createElement('label');
+  switchLabel.setAttribute('for', 'switchInput');
+  switchLabel.classList.add('lbl');
+  switchBox.appendChild(switchInput);
+  switchBox.appendChild(switchLabel);
+  switchBox.innerHTML += '<p>Fahrenheit</p>';
+  // LEFT INFO BOX
   const leftInfoBox = document.createElement('div');
   leftInfoBox.classList.add('leftInfoBox');
+  // RIGHT INFO BOX
   const rightInfoBox = document.createElement('div');
   rightInfoBox.classList.add('rightInfoBox');
+
   const city = document.createElement('h1');
   const temperature = document.createElement('h2');
   temperature.classList.add('class', 'temperature');
@@ -69,8 +85,10 @@ const info = (() => {
   rightInfoBox.appendChild(maxTempDetail);
   rightInfoBox.appendChild(windSpeedDetail);
 
+  infoBox.appendChild(switchBox);
   infoBox.appendChild(leftInfoBox);
   infoBox.appendChild(rightInfoBox);
+
   return {
     infoBox,
     weatherMain,

@@ -183,7 +183,7 @@ form .buttonContainer button:hover {
   animation: boardAnimation 3s linear 0s;
   -webkit-animation: boardAnimation 3s linear 0s;
   -moz-animation: boardAnimation 3s linear 0s;
-
+  color: white;
   position: relative;
 
   border: 1px solid white;
@@ -196,15 +196,62 @@ form .buttonContainer button:hover {
   padding: 50px;
   width: 80%;
 }
+/*SWITCH CONVERTER*/
+.switchBox {
+  border: 1px solid white;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  margin-bottom: 40px;
+  padding: 20px;
+  width: 40%;
+}
 
+.switchBox p {
+  font-size: 24px;
+}
+.lbl {
+  background: #0f76a0;
+  border-radius: 100px;
+  cursor: pointer;
+  display: inline-block;
+  height: 33px;
+  margin-left: 10px;
+  margin-right: 10px;
+  position: relative;
+  transition: 0.2s;
+  width: 65px;
+}
+
+.lbl::after {
+  background: white;
+  border-radius: 100px;
+  content: "";
+  display: block;
+  height: 25px;
+  left: 4px;
+  position: absolute;
+  transition: 0.2s;
+  top: 4px;
+  width: 25px;
+}
+#switchInput:checked + .lbl::after {
+  left: 36px;
+}
+#switchInput:checked + .lbl {
+  background: #a00f0f;
+}
+#switchInput {
+  display: none;
+}
+
+/*END SWITCH CONVERTER*/
 .infoBox h1 {
-  color: white;
   margin-bottom: 30px;
   text-align: center;
 }
 
 .temperature {
-  color: white;
   font-size: 50px;
   text-align: center;
 }

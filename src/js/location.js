@@ -1,5 +1,36 @@
 import info from './weatherInfo';
 
+const fahrenheit = (temperature, minTemp, maxTemp) => {
+  info.temperature.textContent = Math.trunc(
+    (9 * (temperature - 273.15)) / 5 + 32,
+  );
+  info.temperature.innerHTML += ' <sup>°F</sup>';
+  info.minTempInfo.textContent = Math.trunc((9 * (minTemp - 273.15)) / 5 + 32);
+  info.minTempInfo.innerHTML += ' <sup>°F</sup>';
+  info.maxTempInfo.textContent = Math.trunc((9 * (maxTemp - 273.15)) / 5 + 32);
+  info.maxTempInfo.innerHTML += ' <sup>°F</sup>';
+};
+
+const celsius = (temperature, minTemp, maxTemp) => {
+  info.temperature.textContent = Math.trunc(temperature - 273.15);
+  info.temperature.innerHTML += ' <sup>°C</sup>';
+  info.minTempInfo.textContent = Math.trunc(minTemp - 273.15);
+  info.minTempInfo.innerHTML += ' <sup>°C</sup>';
+  info.maxTempInfo.textContent = Math.trunc(maxTemp - 273.15);
+  info.maxTempInfo.innerHTML += ' <sup>°C</sup>';
+};
+
+const tempConverter = (temperature, minTemp, maxTemp) => {
+  const switchInput = document.querySelector('#switchInput');
+  switchInput.addEventListener('click', () => {
+    if (switchInput.checked) {
+      fahrenheit(temperature, minTemp, maxTemp);
+    } else {
+      celsius(temperature, minTemp, maxTemp);
+    }
+  });
+};
+
 const setInfo = (
   city,
   country,
@@ -17,15 +48,13 @@ const setInfo = (
   info.city.textContent = city;
   info.city.innerHTML += ` <sup>${country}</sup>`;
   info.image.setAttribute('src', `http://openweathermap.org/img/w/${icon}.png`);
-  info.temperature.textContent = Math.trunc(temperature - 273.15);
-  info.temperature.innerHTML += ' <sup>°C</sup>';
+
   info.weatherDescription.textContent = weatherDescription;
   info.humidityInfo.textContent = humidity;
   info.pressureInfo.textContent = pressure;
-  info.minTempInfo.textContent = Math.trunc(minTemp - 273.15);
-  info.minTempInfo.innerHTML += ' <sup>°C</sup>';
-  info.maxTempInfo.textContent = Math.trunc(maxTemp - 273.15);
-  info.maxTempInfo.innerHTML += ' <sup>°C</sup>';
+  document.querySelector('#switchInput').checked = false;
+  celsius(temperature, minTemp, maxTemp);
+  tempConverter(temperature, minTemp, maxTemp);
   info.windSpeedInfo.textContent = windSpeed;
 };
 
