@@ -6,7 +6,7 @@
 
 ## :pencil: Description
 
-This application consists of using the Open Weather API, in order to implement concepts such as requests and promises in Javascript and the handling of data in JSON, so that the user can search for information related to the climatic state of a city. and obtain information such as temperatures, humidity, pressure and wind speed.
+This application consists of using the Open Weather API, in order to implement concepts such as requests and promises in Javascript and the handling of data in JSON, so that the user can search for information related to the climatic state of a city, and obtain information such as temperatures, humidity, pressure and wind speed.
 
 This project is part of the Microverse curriculum for the Javascript course.
 
