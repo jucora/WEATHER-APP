@@ -1,46 +1,76 @@
 const info = (() => {
-  const infoBox = document.createElement("div");
-  infoBox.classList.add("infoBox");
-  const city = document.createElement("h1");
-  const temperature = document.createElement("h2");
-  temperature.classList.add("class", "temperature");
-  const line = document.createElement("hr");
-  const image = document.createElement("img");
-  image.classList.add("weatherImage");
-  const weatherContainer = document.createElement("div");
-  weatherContainer.classList.add("weatherContainer");
-  const weatherDetail = document.createElement("ul");
-  weatherDetail.classList.add("weatherDetail");
-  const weatherMain = document.createElement("li");
-  weatherMain.textContent = "Clouds:";
-  const weatherDescription = document.createElement("li");
+  const infoBox = document.createElement('div');
+  infoBox.classList.add('infoBox');
+  const leftInfoBox = document.createElement('div');
+  leftInfoBox.classList.add('leftInfoBox');
+  const rightInfoBox = document.createElement('div');
+  rightInfoBox.classList.add('rightInfoBox');
+  const city = document.createElement('h1');
+  const temperature = document.createElement('h2');
+  temperature.classList.add('class', 'temperature');
+  const image = document.createElement('img');
+  image.classList.add('weatherImage');
+  const weatherDetail = document.createElement('ul');
+  weatherDetail.classList.add('weatherDetail');
+  const weatherMain = document.createElement('li');
+  weatherMain.textContent = 'Clouds:';
+  const weatherDescription = document.createElement('li');
   weatherDetail.appendChild(weatherMain);
   weatherDetail.appendChild(weatherDescription);
-
-  const humityDetail = document.createElement("ul");
-  humityDetail.classList.add("weatherDetail");
-  const humidityTitle = document.createElement("li");
-  humidityTitle.textContent = "Humidity:";
-  const humidityInfo = document.createElement("li");
+  // HUMIDITY
+  const humityDetail = document.createElement('ul');
+  humityDetail.classList.add('weatherDetail');
+  const humidityTitle = document.createElement('li');
+  humidityTitle.textContent = 'Humidity:';
+  const humidityInfo = document.createElement('li');
   humityDetail.appendChild(humidityTitle);
   humityDetail.appendChild(humidityInfo);
-  const pressureDetail = document.createElement("ul");
-  pressureDetail.classList.add("weatherDetail");
-  const pressureTitle = document.createElement("li");
-  pressureTitle.textContent = "Pressure: ";
-  const pressureInfo = document.createElement("li");
+  // PRESSURE
+  const pressureDetail = document.createElement('ul');
+  pressureDetail.classList.add('weatherDetail');
+  const pressureTitle = document.createElement('li');
+  pressureTitle.textContent = 'Pressure: ';
+  const pressureInfo = document.createElement('li');
   pressureDetail.appendChild(pressureTitle);
   pressureDetail.appendChild(pressureInfo);
+  // MIN TEMPERATURE
+  const minTempDetail = document.createElement('ul');
+  minTempDetail.classList.add('weatherDetail');
+  const minTempTitle = document.createElement('li');
+  minTempTitle.textContent = 'Min Temp: ';
+  const minTempInfo = document.createElement('li');
+  minTempDetail.appendChild(minTempTitle);
+  minTempDetail.appendChild(minTempInfo);
+  // MAX TEMP
+  const maxTempDetail = document.createElement('ul');
+  maxTempDetail.classList.add('weatherDetail');
+  const maxTempTitle = document.createElement('li');
+  maxTempTitle.textContent = 'Max Temp: ';
+  const maxTempInfo = document.createElement('li');
+  maxTempDetail.appendChild(maxTempTitle);
+  maxTempDetail.appendChild(maxTempInfo);
+  // WIND SPEED
+  const windSpeedDetail = document.createElement('ul');
+  windSpeedDetail.classList.add('weatherDetail');
+  const windSpeedTitle = document.createElement('li');
+  windSpeedTitle.textContent = 'Wind Speed: ';
+  const windSpeedInfo = document.createElement('li');
+  windSpeedDetail.appendChild(windSpeedTitle);
+  windSpeedDetail.appendChild(windSpeedInfo);
 
-  weatherContainer.appendChild(weatherDetail);
-  weatherContainer.appendChild(humityDetail);
-  weatherContainer.appendChild(pressureDetail);
+  leftInfoBox.appendChild(city);
+  leftInfoBox.appendChild(temperature);
+  leftInfoBox.appendChild(image);
 
-  infoBox.appendChild(city);
-  infoBox.appendChild(temperature);
-  infoBox.appendChild(image);
-  infoBox.appendChild(line);
-  infoBox.appendChild(weatherContainer);
+  rightInfoBox.appendChild(weatherDetail);
+  rightInfoBox.appendChild(humityDetail);
+  rightInfoBox.appendChild(pressureDetail);
+  rightInfoBox.appendChild(minTempDetail);
+  rightInfoBox.appendChild(maxTempDetail);
+  rightInfoBox.appendChild(windSpeedDetail);
+
+  infoBox.appendChild(leftInfoBox);
+  infoBox.appendChild(rightInfoBox);
   return {
     infoBox,
     weatherMain,
@@ -50,6 +80,9 @@ const info = (() => {
     image,
     humidityInfo,
     pressureInfo,
+    minTempInfo,
+    maxTempInfo,
+    windSpeedInfo,
   };
 })();
 
