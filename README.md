@@ -10,11 +10,8 @@ This application consists of using the Open Weather API, in order to implement c
 
 This project is part of the Microverse curriculum for the Javascript course.
 
-## :earth_americas: Live Version here:
+# :globe_with_meridians: [Live Demo](https://raw.githack.com/jucora/WEATHER-APP/master/dist/index.html):point_left:
 
-## :heavy_check_mark: Odin Projet Link
-
-[TODO LIST Project](https://www.theodinproject.com/courses/javascript/lessons/weather-app)
 
 ## :point_right: Functionalities
 
@@ -39,6 +36,10 @@ This project is part of the Microverse curriculum for the Javascript course.
 ## API
 
 [OPEN WEATHER](https://openweathermap.org/)
+
+## :heavy_check_mark: Odin Projet Link
+
+[TODO LIST Project](https://www.theodinproject.com/courses/javascript/lessons/weather-app)
 
 ## Author
 
